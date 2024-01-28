@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=====================/ site info /=====================-->
+    <title>Yummy</title>
+    <link
+      rel="icon"
+      href="./assets/images/logo.png"
+      type="./assets/image/x-icon"
+    />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <!--=====================/ Font Awesome Library /=====================-->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!--=====================/ Bootstrap CSS links /=====================-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!--=====================/ Main Template CSS File /=====================-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- =====================/ Start Side Navbar /===================== -->
+    <nav class="position-fixed bg-white top-0 vh-100 d-flex">
+      <div class="animatedBar">
+        <div
+          class="animatedLeftBar d-flex flex-column justify-content-between h-100 px-3 py-4"
+        >
+          <ul class="links list-unstyled">
+            <li class="showSearchInputs" onclick="showSearchInputs()">
+              search
+            </li>
+            <li onclick="getCategoriesData()">categories</li>
+            <li onclick="getAreaData()">area</li>
+            <li onclick="getIngredientsData()">ingredients</li>
+            <li onclick="showContactForm()">contact us</li>
+          </ul>
+
+          <div class="navFooter">
+            <div class="shareIcons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <p class="pt-2">Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="fixedLeftBar text-dark d-flex flex-column align-items-center justify-content-between h-100 px-2 py-4"
+      >
+        <img class="w-100" src="./assets/Images/logo.png" alt="logo" />
+        <i class="openCloseBar fa-solid fa-bars fa-2x"></i>
+        <div class="share-icons d-flex flex-column gap-2">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================/ Start landing /===================== -->
+    <header id="landing" class="min-vh-100">
+      <!-- =====================/ Loading page /===================== -->
+      <div id="loading"><span class="loader"></span></div>
+      <div class="displayPort">
+        <div class="container">
+          <!-- =====================/ Search inputs /===================== -->
+          <div id="searchInputs" class="row py-3"></div>
+          <!-- =====================/ inner-loading /===================== -->
+          <div id="innerLoading"><span class="loader"></span></div>
+          <!-- =====================/ container display data /===================== -->
+          <div id="root" class="row g-4 py-5">
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--=====================/ jQuery link /===================== -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <!--=====================/ Bootstrap js link /===================== -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!--=====================/ Main js link /===================== -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
